@@ -20,10 +20,10 @@ app.get('/', (req, res) => {
 });
 
 // Desafio Clase 6
-app.get('./productos', (req, res) => {
+app.get('/productos', (req, res) => {
     res.send(contenedor.getAll())
 });
 
-app.get('./productoRandom', (req, res) => {
+app.get('/productoRandom', (req, res) => {
     res.send(productoRandom())
 });
